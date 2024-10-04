@@ -120,4 +120,84 @@ function palindromeOrNot (string) {
 }
 console.log(palindromeOrNot("Anita lava la tina"));
 console.log(palindromeOrNot("Hola mundo"));
-console.log(palindromeOrNot("Dabale arroz a la zorra el abad"))
+console.log(palindromeOrNot("Dabale arroz a la zorra el abad"));
+
+
+
+// ARRAYS
+// 1. Suma de elementos en array
+function sumElements (array) {
+    let sum = 0;
+    array.forEach( num => {
+        sum += num;
+    })
+    return sum;
+}
+let array = [8, 17, 3, 49, 95]
+console.log(sumElements(array));
+
+// 2. Promedio de elementos en array
+function averageElements (array) {
+    let avg = sumElements(array) / array.length;
+    return avg; 
+}
+console.log(averageElements(array));
+
+// 3. ELementos ordenados ascendente
+function ascOrder (array) {
+    return array.sort((a, b) => a - b);
+}
+let numbers = [43, 7, 43794, 918, 3, 93];
+console.log(ascOrder(numbers));
+
+// Elementos mayores al número dado
+function greaterThan (array, num) {
+    return array.filter(element => element > num);
+}
+console.log(greaterThan(numbers, 10));
+
+// 5. Dos arrays en 1
+function twoArraysInOne(array1, array2) {
+    return array1.concat(array2);
+}
+let desserts = ["tiramisú", "lemon pie", "pannacota"];
+let fruits = ["apple", "strawberry", "watermelon"];
+console.log(twoArraysInOne(desserts, fruits));
+
+// 6. Elemento mayor de array
+function maxElement (array) {
+    return Math.max(...array);
+}
+// console.log(...numbers); ... operador de propagación
+console.log(maxElement(numbers));
+
+// 7. Elemento menor de array
+function minElement (array) {
+    return Math.min(...array);
+}
+console.log(minElement(numbers));
+
+// 8. Elemento repetido
+function countingOcc (array, elm) {
+    return array.filter(item => item === elm).length;
+}
+console.log(fruits);
+console.log(countingOcc(fruits, "lemon"));
+console.log(countingOcc(fruits, "watermelon"));
+
+// 9. No elementos duplicados
+function noDuplication (array) {
+    return array.filter((value, index) => array.indexOf(value) === index);
+}
+let bands = ["Linkin Park", "RHCP", "Linkin Park", "Artic Monkeys", "Linkin Park", "RHCP", "System of a Down"];
+console.log(noDuplication(bands));
+
+// 10. Elementos orden descendiente
+function descOrder (array) {
+    return array.sort((a, b) => b - a);
+}
+console.log(descOrder(numbers));
+
+
+
+

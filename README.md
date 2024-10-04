@@ -30,21 +30,21 @@
 
 ## Arrays:
 
-1. Escribe una función que tome un array de números como argumento y devuelva la suma de todos sus elementos.
-2. Escribe una función que tome un array de números como argumento y devuelva el promedio de todos sus elementos.
-3. Escribe una función que tome un array de números como argumento y devuelva el array ordenado de forma ascendente.
-4. Escribe una función que tome un array de números y un número como argumentos, y devuelva un nuevo array con los elementos mayores al número dado.
-5. Escribe una función que tome dos arrays como argumentos y devuelva un nuevo array con todos los elementos de ambos arrays.
-6. Escribe una función que tome un array de números como argumento y devuelva el número máximo dentro del array.
-7. Escribe una función que tome un array de números como argumento y devuelva el número mínimo dentro del array.
-8. Escribe una función que tome un array y un elemento como argumentos, y devuelva la cantidad de veces que el elemento aparece en el array.
-9. Escribe una función que tome un array como argumento y devuelva un nuevo array sin elementos duplicados.
-10. Escribe una función que tome un array como argumento y devuelva un nuevo array con los elementos en orden inverso.
+<!-- 1. Escribe una función que tome un array de números como argumento y devuelva la suma de todos sus elementos. -->
+<!-- 2. Escribe una función que tome un array de números como argumento y devuelva el promedio de todos sus elementos. -->
+<!-- 3. Escribe una función que tome un array de números como argumento y devuelva el array ordenado de forma ascendente. -->
+<!-- 4. Escribe una función que tome un array de números y un número como argumentos, y devuelva un nuevo array con los elementos mayores al número dado. -->
+<!-- 5. Escribe una función que tome dos arrays como argumentos y devuelva un nuevo array con todos los elementos de ambos arrays. -->
+<!-- 6. Escribe una función que tome un array de números como argumento y devuelva el número máximo dentro del array. -->
+<!-- 7. Escribe una función que tome un array de números como argumento y devuelva el número mínimo dentro del array. -->
+<!-- 8. Escribe una función que tome un array y un elemento como argumentos, y devuelva la cantidad de veces que el elemento aparece en el array. -->
+<!-- 9. Escribe una función que tome un array como argumento y devuelva un nuevo array sin elementos duplicados. -->
+<!-- 10. Escribe una función que tome un array como argumento y devuelva un nuevo array con los elementos en orden inverso. -->
 
 ## Objetos literales:
 
-1. Escribe una función que tome un objeto literal con una propiedad "nombre" y devuelva el valor de esa propiedad.
-2. Escribe una función que tome un objeto literal con una propiedad "edad" y un número como argumentos, y actualice el valor de la propiedad "edad" con el número dado.
+<!-- 1. Escribe una función que tome un objeto literal con una propiedad "nombre" y devuelva el valor de esa propiedad. -->
+<!-- 2. Escribe una función que tome un objeto literal con una propiedad "edad" y un número como argumentos, y actualice el valor de la propiedad "edad" con el número dado. -->
 3. Escribe una función que tome un objeto literal y una cadena de texto como argumentos, y agregue una nueva propiedad al objeto con la cadena de texto como nombre y un valor inicial de null.
 4. Escribe una función que tome un objeto literal y una cadena de texto como argumentos, y elimine la propiedad del objeto con el nombre dado.
 5. Escribe una función que tome un objeto literal como argumento y devuelva la cantidad de propiedades que tiene.
