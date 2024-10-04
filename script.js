@@ -60,6 +60,7 @@ function randomNumber () {
 randomNumber();
 
 
+
 // LETRAS
 // 1. Concatenación
 function concatText (string1, string2) {
@@ -201,3 +202,111 @@ console.log(descOrder(numbers));
 
 
 
+// OBJETOS LITERALES
+// 1. Propiedad de obj. lit.
+function printProperty (obj, prop) {
+    return obj[prop];
+}
+const coder = {
+    name: "Andrea",
+    age: 32
+}
+console.log(printProperty(coder, "name"));
+console.log(printProperty(coder, "age"));
+
+// 2. Actaulizar propiedad
+function updateProperty (obj, newProp) {
+    obj.age = newProp; 
+}
+updateProperty(coder, 23);
+console.log(coder.age);
+
+// 3. Nueva propiedad
+function addProperty (obj, newProp) {
+    obj[newProp] = null;
+}
+addProperty(coder, "race");
+console.log(coder);
+
+// 4. Borrar propiedad
+function deletProperty (obj, prop) {
+    delete obj[prop];
+}
+deletProperty(coder, "race");
+console.log(coder);
+
+// 5. Propiedades totales
+function totalProperties (obj) {
+    return Object.keys(obj).length;
+}
+// console.log(Object.keys(coder));
+console.log(totalProperties(coder));
+
+// 6. Existe propiedad?
+function propertyExists (obj, elm) {
+    return !!obj[elm];
+}
+console.log(propertyExists(coder, "age"));
+console.log(propertyExists(coder, "race"));
+
+// 7. Valores de las propiedades de un objeto
+function showPropertiesValues (obj) {
+    return Object.values(obj);
+}
+console.log(showPropertiesValues(coder));
+
+// 8. Mismas propiedades?
+function comparingProperties (obj1, obj2) {
+   return JSON.stringify(obj1) === JSON.stringify(obj2);
+    // const keys1 = Object.keys(obj1);
+    // const keys2 = Object.keys(obj2);
+    // if (keys1.length !== keys2.length) return false;
+    // return keys1.every(key => obj1[key] === obj2[key]);
+
+    // **Ambas opciones bo sirven para objetos más complejos con funciones u objetos anidados. Sirve para objetos pequeños y simples.
+}
+const cat1 = {
+    name: "Phobos",
+    age: 3,
+    sex: "male"
+};
+const cat2 = {
+    name: "Deimos",
+    age: 3,
+    sex: "female"
+};
+console.log(Object.keys(cat1));
+console.log(comparingProperties(cat1, cat2));
+
+// 9. Copia de objeto
+function copyObject (obj) {
+    // COPIAS SUPERFICIALES
+    // Útil para objetos planos
+    // return Object.assign({}, obj);
+    // Sintaxi más moderna y legible
+    return {...obj};
+
+    // COPIAS PROFUNDAS
+    // return JSON.parse(JSON.stringify(obj));
+}
+const coder1 = copyObject(coder);
+console.log(coder1);
+
+// 10. 2 objetos en 1
+function twoObjectsInOne (obj1, obj2) {
+    return Object.assign({}, obj1, obj2);
+}
+const obj1 = {
+    type: "fairy",
+    level: 100,
+    skills: {
+        skill1: "absolute joy",
+        skill2: "death by laugh",
+        skill3: "angry dust"
+    }
+}
+const obj2 = {
+    type: "troll",
+    level: 94
+}
+console.log(twoObjectsInOne(obj1, obj2));
